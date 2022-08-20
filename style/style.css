@@ -182,6 +182,10 @@ body {
   font-weight: 600;
 }
 
+.profile .social__media .social li.youtube {
+  background: #f80101;
+}
+
 .profile .share__button {
   position: absolute;
   top: 2%;
