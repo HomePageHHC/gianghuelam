@@ -131,12 +131,28 @@ body
     {
       background: #2d86ff;
       box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+      i 
+      {
+        font-size: 30px;
+      }
     }
     li.instagram
     {
       background: #d6249f;
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
       box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    }
+    li.tiktok
+    {
+      background: #000;
+
+       i 
+       {
+        color: #fff;
+        text-shadow: 2px 2px #ff3353fc,
+               -2px -2px cyan;
+        font-size: 30px;
+       }
     }
    }
    }
