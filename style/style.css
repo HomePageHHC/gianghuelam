@@ -18,6 +18,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   animation: animated 10s infinite alternate-reverse;
+  background-image: url("https://tophinhanhdep.com/wp-content/uploads/2021/11/Cool-Nature-Desktop-Wallpapers.jpg");
   background-position: center;
   padding: 10px 15px 10px 15px;
   min-height: 50vh;
@@ -174,6 +175,13 @@ body {
   font-size: 30px;
 }
 
+.profile .social__media .social li.zalo {
+  background: #285AEB;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
 .profile .share__button {
   position: absolute;
   top: 2%;
@@ -197,7 +205,6 @@ body {
 }
 
 .profile .share__button i {
-  color: #fc2567;
   font-size: 20px;
 }
 
@@ -220,30 +227,6 @@ body {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
-}
-
-@-webkit-keyframes animated {
-  0% {
-    background-image: url("https://i.pinimg.com/originals/c3/76/47/c37647d3cd724c0dc86a7db7627eaba5.jpg");
-  }
-  50% {
-    background-position: url("https://i.pinimg.com/originals/16/65/a7/1665a7ae96ba9e767182d472c8f4f52e.jpg");
-  }
-  100% {
-    background-image: url("https://www.teahub.io/photos/full/38-383062_1920x1080-amazing-sunset-above-the-city-wallpaper-anime.jpg");
-  }
-}
-
-@keyframes animated {
-  0% {
-    background-image: url("https://i.pinimg.com/originals/c3/76/47/c37647d3cd724c0dc86a7db7627eaba5.jpg");
-  }
-  50% {
-    background-position: url("https://i.pinimg.com/originals/16/65/a7/1665a7ae96ba9e767182d472c8f4f52e.jpg");
-  }
-  100% {
-    background-image: url("https://www.teahub.io/photos/full/38-383062_1920x1080-amazing-sunset-above-the-city-wallpaper-anime.jpg");
-  }
 }
 
 .music__feature {
@@ -269,7 +252,6 @@ body {
 }
 
 .music__feature i {
-  color: #fc2567;
   font-size: 20px;
 }
 
