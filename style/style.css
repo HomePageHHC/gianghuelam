@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   animation: animated 10s infinite alternate-reverse;
-  background-image: url("https://b-f2-zpc.zdn.vn/2408708963125616082/0042dca12896edc8b487.jpg");
+  background-image: url("big.jpg");
   background-position: center;
   padding: 10px 15px 10px 15px;
   min-height: 50vh;
@@ -327,6 +327,12 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    background-image: url("smallbackground.jpg");
   }
 }
 /*# sourceMappingURL=style.css.map */
