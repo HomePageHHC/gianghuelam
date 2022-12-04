@@ -31,26 +31,26 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "In The Name...",
-      "Love Maze",
-      "stereo heart",
-      "Rendezvous",
-      "Nơi Này Có Anh"
+      "Yêu",
+      "Bước qua mùa...",
+      "Mơ",
+      "Đâu Cần....",
+      "Amazing"
     ],
     trackNames = [
-      "Martin Garrix",
-      "BTS",
-      "Gym Class Hero",
-      "DEAMN",
-      "Sơn Tùng M-TP"
+      "7uppercut",
+      "Vũ",
+      "Vũ Cát Tường",
+      "Tiên Tiên",
+      "Rex Orange County"
     ],
     albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
     trackUrl = [
-      "https://github.com/Cam0411/music__4/blob/main/y2mate.com%20-%20In%20The%20Name%20Of%20Love%20%20Martin%20Garrix%20%20Bebe%20Rexha%20Lyrics%20.mp3?raw=true",
-      " https://github.com/Cam0411/music__4/blob/main/y2meta.com%20-%20BTS%20(%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8)%20-%20Love%20Maze%20(Easy%20Lyrics)%20(128%20kbps).mp3?raw=true",
-      "https://github.com/Cam0411/music__4/blob/main/y2meta.com%20-%20Gym%20Class%20Heroes%20-%20My%20heart%20stereo%20(Stereo%20Hearts)%20(Lyrics)%20(128%20kbps).mp3?raw=true",
-      " https://github.com/Cam0411/music__4/blob/main/y2meta.com%20-%20Rendezvous-DEAMN%20%20(lyrics%20video)%F0%9F%8E%B5%20(128%20kbps).mp3?raw=true    ",
-      "https://github.com/Cam0411/music__4/blob/main/NoiNayCoAnh-SonTungMTP-4772041.mp3?raw=true"
+      "https://github.com/Cam0411/music__2/blob/main/Yeu-7UPPERCUTS-6611749.mp3?raw=true",
+      " https://github.com/Cam0411/music__2/blob/main/BuocQuaMuaCoDonXmasLiveSession-ThaiVu-6978614.mp3?raw=true",
+      "https://github.com/Cam0411/music__2/blob/main/Mo-VuCatTuong-5958629.mp3?raw=true",
+      " https://github.com/Cam0411/music__2/blob/main/DauCanMotBaiCaTinhYeu-TienTienTrang-5945602.mp3?raw=true",
+      "https://github.com/Cam0411/music__2/blob/main/y2meta.com%20-%20Rex%20Orange%20County%20-%20AMAZING%20(Lyrics)%20(128%20kbps).mp3?raw=true"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
@@ -225,7 +225,7 @@ $(function () {
 
     selectTrack(0);
 
-    audio.loop = true;
+    audio.loop = false;
 
     playPauseButton.on("click", playPause);
 
