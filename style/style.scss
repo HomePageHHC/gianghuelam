@@ -11,22 +11,77 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: animated 10s infinite alternate-reverse;
-    background-image: url('big.jpg');
-    background-position: center;
     padding: 10px 15px 10px 15px;
     min-height: 50vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    overflow-y: scroll;
 }
+.background__change-color
+{
+  height: 120vh;
+  position: absolute;
+  z-index: -9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  
+  .bgn
+  {
+    border-radius: 50%;
+    animation:  gradient 2.5s infinite alternate-reverse;
+  }
+  .bgn:nth-child(1){
+    height: 90%;
+    width: 98%;
+    position: absolute;
+    left: -20%;
+    top: -10%;
+    background: #76BA99;
+
+  }
+  .bgn:nth-child(2){
+    height: 80%;
+    width: 60%;
+    position: absolute;
+    right: -12%;
+    top: -12%;
+    background: #ADCF9F;
+  }
+  .bgn:nth-child(3){
+    height: 75%;
+    width: 85%;
+    position: absolute;
+    bottom: -15%;
+    right: -20%;
+    background: #CED89E
+    ;
+  }
+  .bgn:nth-child(4){
+    height: 60%;
+    width: 80%;
+    background: #FFDCAE;
+    position: absolute;
+    bottom: -20%;
+    left: -18%;
+  }
+}
+.background__change-color::after
+{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(80px); 
+}
+
 .profile 
 {
-
+ 
     max-width: 500px;
     min-height: 100vh;
     width: 100%;
-    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
-    backdrop-filter: blur(5px);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -40,6 +95,7 @@ body
         text-align: center;
         margin-bottom: 0px;
         margin-top: 40px;
+        z-index: 9999;
         .img__profile 
         {
           width: 90px;
@@ -112,7 +168,7 @@ body
       margin-top: 20px;
       padding: 10px 12px;
       font-family: sans-serif;
-      // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
     
       i 
       {
@@ -122,44 +178,58 @@ body
       }
       
     }
-    li.facebook 
-    {
-      background: #2d86ff;
-      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-      i 
+      li.facebook 
       {
-        font-size: 30px;
+        background: #2d86ff;
+        box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+        i 
+        {
+          font-size: 30px;
+        }
       }
-    }
-    li.instagram
-    {
-      background: #d6249f;
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-    }
-    li.tiktok
-    {
-      background: #000;
-
-       i 
-       {
-        color: #fff;
-        text-shadow: 2px 2px #ff3353fc,
-               -2px -2px cyan;
-        font-size: 30px;
-       }
-    }
-    li.zalo 
+      li.instagram
+      {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 35%,#d6249f 60%,#285AEB 90%);
+        box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+      }
+      li.zalo 
     {
       background: #285AEB;
       color: #fff;
       font-size: 25px;
       font-weight: 600;
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     }
     li.youtube
     {
       background: #f80101;
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
     }
+    li.twitter
+    {
+      background: #1d9bf0;;
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+
+    }
+    li.pinterest
+    {
+      background: #e60023;;
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    }
+  
+      li.tiktok
+      {
+        background: #000;
+        box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+         i 
+         {
+          color: #fff;
+          text-shadow: 2px 2px #ff3353fc,
+                 -2px -2px cyan;
+          font-size: 30px;
+         }
+      }
    }
    }
    .share__button 
@@ -170,7 +240,7 @@ body
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #fff;
+    background: #6C4AB6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     justify-content: center;
@@ -180,6 +250,7 @@ body
     {
 
       font-size: 20px;
+      color: #fff;
     }
    }
    .url-text 
@@ -193,13 +264,12 @@ body
     opacity: 0;
     transition: 0.4s;
     font-family: 'Roboto', sans-serif;
-    transform: translateY(-100%);
+    transform: translateY(-60%);
    
    }
    .add-ani
    {
     transform: translateY(0%);
-
     opacity: 1;
    }
 }
@@ -213,16 +283,18 @@ body
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff;
+  background: #1ed760;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
   cursor: pointer;
   i 
   {
 
     font-size: 20px;
+    color: #fff;
   }
 }
 
@@ -272,9 +344,148 @@ body
   }
 }
 
-@media (max-width:750px){
-  body 
-  {
-    background-image: url('smallbackground.jpg');
+
+
+.loading__page 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .mesh-loader {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.mesh-loader .circle {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    margin: -12.5px;
+    -webkit-animation: mesh 3s ease-in-out infinite;
+    animation: mesh 3s ease-in-out infinite -1.5s;
+}
+
+.mesh-loader > div .circle:first-child {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.mesh-loader > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.mesh-loader > div:first-child {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.mesh-loader__2 {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  animation-delay: 3s;
+}
+
+.mesh-loader__2 .circle {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  margin: -12.5px;
+
+  -webkit-animation: mesh 3s ease-in-out infinite;
+  animation: mesh 3s ease-in-out infinite -1.5s;
+}
+
+.mesh-loader__2 > div .circle:first-child {
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+}
+
+.mesh-loader__2 > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.mesh-loader__2 > div:first-child {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mesh-loader__2 > div:last-child {
+  -webkit-transform: rotate(135.5deg);
+  transform: rotate(135.5deg);
+}
+@-webkit-keyframes mesh {
+  0% {
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  50.00001% {
+    -webkit-transform-origin: 50% 200%;
+            transform-origin: 50% 200%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 200%;
+            transform-origin: 50% 200%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes mesh {
+  0% {
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  50.00001% {
+    -webkit-transform-origin: 50% 200%;
+            transform-origin: 50% 200%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 200%;
+            transform-origin: 50% 200%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+}
+@keyframes gradient {
+  from{
+    transform: scale(1.0);
+  }to {
+    transform: scale(1.3);
   }
 }
