@@ -31,26 +31,26 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "Dawn",
-      "Me & You",
-      "Memory Lane",
-      "Home",
-      "Symbolism pt. III"
+      "Yêu",
+      "Bước qua mùa...",
+      "Mơ",
+      "Đâu Cần....",
+      "Amazing"
     ],
     trackNames = [
-      "Skylike - Dawn",
-      "Alex Skrindo - Me & You",
-      "Tobu - Memory Lane",
-      "Jordan Schor - Home",
-      "Electro-Light - Symbolism"
+      "7uppercut",
+      "Vũ",
+      "Vũ Cát Tường",
+      "Tiên Tiên",
+      "Rex Orange County"
     ],
     albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
     trackUrl = [
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/2.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3",
-      "https://github.com/Cam0411/music/blob/main/Tobu%20-%20Memory%20Lane%20%5BNCS%20Release%5D.mp3?raw=true",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
-      "https://github.com/Cam0411/music/blob/main/Electro-Light%20-%20Symbolism%20pt.%20III%20%5BNCS%20Release%5D.mp3?raw=true"
+      "https://github.com/Cam0411/music__2/blob/main/Yeu-7UPPERCUTS-6611749.mp3?raw=true",
+      " https://github.com/Cam0411/music__2/blob/main/BuocQuaMuaCoDonXmasLiveSession-ThaiVu-6978614.mp3?raw=true",
+      "https://github.com/Cam0411/music__2/blob/main/Mo-VuCatTuong-5958629.mp3?raw=true",
+      " https://github.com/Cam0411/music__2/blob/main/DauCanMotBaiCaTinhYeu-TienTienTrang-5945602.mp3?raw=true",
+      "https://github.com/Cam0411/music__2/blob/main/y2meta.com%20-%20Rex%20Orange%20County%20-%20AMAZING%20(Lyrics)%20(128%20kbps).mp3?raw=true"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
